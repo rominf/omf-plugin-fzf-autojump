@@ -11,6 +11,8 @@
 
 Adds dirs from the autojump database to the fzf list. To invoke, press `Alt + Shift + H`.
 
+Requires fzf plugin (https://github.com/fisherman/fzf).
+
 ## Install
 
 ```fish
