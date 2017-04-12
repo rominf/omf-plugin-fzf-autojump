@@ -9,7 +9,7 @@
 
 <br/>
 
-Adds dirs from the autojump database to the fzf list. To invoke, press `Alt + Shift + H`.
+Adds dirs from the autojump database to the fzf list.
 
 Requires fzf plugin (https://github.com/fisherman/fzf).
 
@@ -22,8 +22,12 @@ $ omf install fzf-autojump
 
 ## Usage
 
+To invoke, press `Alt + Shift + H`.
+
+Manual invocation:
+
 ```fish
-$ fzf-autojump
+$ __fzf_autojump
 ```
 
 
