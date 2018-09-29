@@ -4,7 +4,7 @@ function __fzf_autojump
   set -q FZF_TMUX_HEIGHT; or set FZF_TMUX_HEIGHT 40%
   # Fish hangs if the command before pipe redirects (2> /dev/null)
   set -l FZF_RESULT (eval $FZF_AUTOJUMP_COMMAND | eval (__fzfcmd) +m $FZF_AUTOJUMP_OPTS)
-  if [ (echo $FZF_RESULT | wc -l) -gt 0 ]
+  if [ -n "$FZF_RESULT" ]
     cd $FZF_RESULT
   end
   commandline -f repaint
